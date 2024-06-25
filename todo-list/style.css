@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-color: #6cb6aa;
+  --green-dark-color: #518a81;
+  --red-color: #f24646b5;
+  --red-dark-color: #860909db;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./fonts/SegoeUI-Regular.woff2") format("woff2"),
+    url("./fonts/SegoeUI-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e1dede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.list__container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.list__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list__error {
+  color: var(--red-dark-color);
+  margin: 10px 0;
+  text-align: center;
+}
+
+.list__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.list__input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--green-color);
+  border-radius: 5px;
+  outline: none;
+}
+
+.list__btn {
+  padding: 10px;
+  border: none;
+  background: var(--green-color);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.list__btn:hover {
+  background: var(--green-dark-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.list__item {
+  padding: 10px;
+  border-bottom: 1px solid var(--green-dark-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list__item:last-child {
+  border-bottom: none;
+}
+
+.list__task {
+  cursor: pointer;
+}
+
+.list__item--completed {
+  text-decoration: line-through;
+  color: var(--red-dark-color);
+}
+
+.list__btn--delete {
+  background: var(--red-color);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.list__btn--delete:hover {
+  background: var(--red-dark-color);
+}

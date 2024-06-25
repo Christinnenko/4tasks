@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-color: #fc5419;
+  --light-color: #ffc849;
+}
+
+@font-face {
+  font-family: "GolosText";
+  src: url("./fonts/GolosText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "GolosText", sans-serif;
+  background-image: url(./images/background.jpg);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user__container {
+  width: 70vh;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+}
+
+.user__title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5674cc;
+}
+
+.user__list {
+  list-style-type: none;
+}
+
+.user__item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--light-color);
+  border: 1px solid var(--bright-color);
+  cursor: pointer;
+}
+
+.user__item:hover {
+  background-color: var(--bright-color);
+}
+
+.user__details {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.user__contact {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.user__btn {
+  background-color: var(--light-color);
+  border: 1px solid var(--bright-color);
+  font-family: "GolosText", sans-serif;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.user__btn:hover {
+  background-color: var(--bright-color);
+}
+
+.error {
+  color: var(--bright-color);
+  text-align: center;
+}
